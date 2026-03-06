@@ -6,17 +6,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav><a href="index.html">Back to Home</a></nav>
-    <h1>Core Networking Concepts</h1>
+    <nav><a href="index.html">Home</a></nav>
+    <h1>Networking Evidence & Concepts</h1>
+    
     <section>
-        <h3>DNS (Domain Name System)</h3>
-        <p>DNS translates human-readable domain names (like github.io) into machine-readable IP addresses.</p>
-        
-        <h3>IP Addressing</h3>
-        <p>Every device on a network has a unique identifier. We use IPv4 and IPv6 to route packets to the correct host.</p>
-        
-        <h3>HTTP vs HTTPS</h3>
-        <p>HTTP sends data in plain text, while HTTPS uses TLS/SSL encryption to secure the communication channel.</p>
+        <h2>IP Addressing Explanation</h2>
+        <ul>
+            <li><strong>Purpose:</strong> Every device on a network requires a unique identifier; our website uses IP addressing to allow global routers to direct traffic packets to the specific host server.</li>
+            <li><strong>IPv4 vs. IPv6 Resolution:</strong> Our deployment demonstrates how a domain name maps to specific numerical addresses, specifically IPv4 (32-bit addresses) or IPv6 (128-bit addresses), ensuring the website is reachable across different network protocols.</li>
+            <li><strong>Static vs. Dynamic Hosting:</strong> By using a professional hosting service, our site is assigned to a set of anycast IP addresses, which optimizes the path between the user and the server.</li>
+            <li><strong>Layer 3 Connectivity:</strong> In the context of the TCP/IP model, these IP addresses function at the Network layer to handle host-to-host communication.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Protocols & Security</h2>
+        <p>This site utilizes <strong>HTTPS</strong> for secure communication[cite: 35, 45].</p>
     </section>
 </body>
 </html>
