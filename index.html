@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Networking Project 1</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.3/purify.min.js"></script>
 </head>
 <body>
     <nav>
@@ -18,6 +19,16 @@
     </header>
     <main>
         <p>This website is built to demonstrate how networking concepts are applied in real deployments.</p>
+        <section>
+            <h2>Interactive Message Board</h2>
+            <p>Leave a message below. Your input will be sanitized to prevent XSS attacks.</p>
+            <input type="text" id="userInput" placeholder="Enter your message here...">
+            <button onclick="submitMessage()">Post Message</button>
+            <div class="message-board" id="messageBoard">
+                <h3>Recent Messages</h3>
+            </div>
+        </section>
     </main>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
